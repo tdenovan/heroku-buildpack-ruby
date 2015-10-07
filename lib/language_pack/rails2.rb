@@ -37,7 +37,6 @@ class LanguagePack::Rails2 < LanguagePack::Ruby
 
       super.merge({
         "web" => web_process,
-        "worker" => "bundle exec rake jobs:work",
         "console" => "bundle exec script/console"
       })
     end
